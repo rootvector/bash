@@ -62,6 +62,6 @@ Terminal passes the typed command to shell, which understands them and tells the
 
 > Basic of terminal
 
-> Basic shell commands [Basic Commands](**example-of-linux-commands)
+> Basic shell commands [Basic Commands](#shell)
 
 
