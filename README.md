@@ -24,3 +24,12 @@ A shell program is typically an executable *binary* that takes commands that you
 Typically runs in a *text window* where user can interpret commands to carry out various actions.
 Most mordern **linux and Unix** distributions provide a BASH shell by default.
 
+**Example of Linux Commands**
+|COMMANDS|DESCRIPTION|
+|:------:|:---------:|
+|`uname`|system informatiom, version, hostname,etc.|
+|`pwd`|print working directory|
+|`ls`|list the directory|
+|`mkdir directoryname`|make directory|
+|`cd directoryname`|change directory to directoryname|
+|`cd ..`|change directory/ go one directory back|
