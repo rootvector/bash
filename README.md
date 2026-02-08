@@ -1,7 +1,7 @@
 # BASH FOR BEGINNERS
-## Bash for Beginners | Automation | Shell Scripting
+### Bash for Beginners | Automation | Shell Scripting
 
-#INDEX
+# **INDEX**
 ## TABLE OF CONTENT
 1. ### [Introduction](#introduction)
 2. ### [Variables](#variables)
@@ -14,5 +14,6 @@
 9. ### [Mini Projects](#mini-projects)
     - *Real world useful programs*
 
+---
 
 ## Introduction
