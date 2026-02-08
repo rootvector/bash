@@ -62,7 +62,7 @@ Terminal passes the typed command to shell, which understands them and tells the
 
 > Basic of terminal
 
-> Basic shell commands [Basic Commands](#shell)
+> Basic shell commands [Basic Commands](#basic-commands)
 
 
 ### Enviroment Setup
@@ -70,12 +70,59 @@ You can install Ubuntu Linux Operating System and visual studio code IDE for wri
 
 ---
 
+
 ## Basic Commands
 
-`hostname`
-show the hostname
+**first note that:**
 
-`clear`
-use to clear the terminal screen
+- ~ : home directory, you can use `cd ~` to jump home directory.
+
+- / : the root directory of linux system, you can use `cd /` to jump direct to root (/) directory.
+
+- Tab : use tab for auto complication, and double tab for suggestions.
+
+
+
+|COMMANDS           |                       DESCRIPTION                                 |
+|:------------------|:-----------------------------------------------------------------:|
+|`hostname`         |show the hostname                                                  |
+|`clear`            |clear the terminal window                                          |
+|`cat file.txt`     |print the file data                                                |
+|`ls -la`           |long list of directory files and folders also hidden file          |
+|`cd dirctory`      |change directory or path                                           |
+|`cd ..`            |change path to one directory back                                  |
+|`man ls`           |manual of ls command, man command help to check manual of commands |
+|`info ls`          |get information about any command                                  |
+|`apt install vim`  |apt the packet manager used to download software or programs       |
+|`whatis ls`        |whatis use to get one line discription of any command              |
+|`mkdir dirname`    |make dir named dirname                                             |
+|`touch filename`   |crate empty file                                                   |
+|`nano filename.txt`|nano text editor used to read or write in file                     |
+
+
+
+
+> NOTE: you can check any perticular commands discription using `--help` or `man` cmd.
+
+*man directory /usr/share/doc*
+
+*/bin is path of all binarys that execute as program or software*
+
+- check out executables file in your system by running command
+
+'''bash
+ls /bin
+```
+
+#### Example
+
+You can chack manual or help of perticular command, that shows options of command in details and how to use that command or tool.
+
+```bash
+cat --help
+man cat
+man ls
+ls --help
+```
 
 
