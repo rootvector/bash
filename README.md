@@ -126,6 +126,11 @@ or `mv * /path` move the all file, folder form present directory to provided `/p
 |`updatedb`         |update locate database, bydefualt update in 24hr                   |
 |`find file`        |find form scrach / for root, or you can give path to start finding file or folder|
 |`search file`      |search file or folder                                              |
+|`grep text`        |grep used to filter stdout ex: `ls -la | grep new.txt`, `cat colors.txt | grep black` |
+|`grep apple fruits.txt`|search apple in fruits.txt file and highlight that word        |
+
+
+
 
 
 
