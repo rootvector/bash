@@ -81,6 +81,9 @@ You can install Ubuntu Linux Operating System and visual studio code IDE for wri
 
 - Tab : use tab for auto complication, and double tab for suggestions.
 
+- * : * is a wild car character, ex: you can delete multiple files of same extension at single command `rm *.txt`, the * behave like a file name.
+or `mv * /path` move the all file, folder form present directory to provided `/path`.
+
 
 
 |COMMANDS           |                       DESCRIPTION                                 |
@@ -98,6 +101,31 @@ You can install Ubuntu Linux Operating System and visual studio code IDE for wri
 |`mkdir dirname`    |make dir named dirname                                             |
 |`touch filename`   |crate empty file                                                   |
 |`nano filename.txt`|nano text editor used to read or write in file                     |
+|`touch file{1..100}.txt`|create 1-100 files that use to create multiple file at a time |
+|`rm filename`      |rm command use to remove file or delete file                       |
+|`rmdir dirname`    |rmdir used to remove or delete directory/folder                    |
+|`mv file /paht`    |move command use to move file or folder to perticular path         |
+|`whereis python`   |whereis command is use to find the path of binary to executable    |
+|`cal`              |show the calander                                                  |
+|`date`             |show date                                                          |
+|`!!`               |use to run previous command                                        |
+|`history`          |show all command history which you runed on system                 |
+|`cp file /path`    |copy the file to path                                              |
+|`df`               |show mounted drives                                                |
+|`du .`             |directory usage show how much directory space are used             |
+|`free`             |show the memory usage                                              |
+|`who`              |show who loged in on system                                        |
+|`who -a`           |show more details                                                  |
+|`ifconfig`         |show network configurations and network details                    |
+|`ps`               |show running processes                                             |
+|`ps -aux`          |show all running process , like systemd,etc                        |
+|`kill PID`         |kill the running process                                           |
+|`locate python`    |use to locat file, binary, folder, etc.                            |
+|`sudo su`          |SWITCH USE TO ROOT                                                 |
+|`su -root`         |change use to root, change enviroment to root                      |
+|`updatedb`         |update locate database, bydefualt update in 24hr                   |
+|`find file`        |find form scrach / for root, or you can give path to start finding file or folder|
+|`search file`      |search file or folder                                              |
 
 
 
@@ -107,6 +135,8 @@ You can install Ubuntu Linux Operating System and visual studio code IDE for wri
 *man directory /usr/share/doc*
 
 */bin is path of all binarys that execute as program or software*
+
+*use 2> to pass errors*
 
 - check out executables file in your system by running command
 
