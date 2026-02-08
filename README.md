@@ -160,5 +160,6 @@ man ls
 ls --help
 ```
 
+---
 
 ## Variables
