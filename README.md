@@ -1,6 +1,6 @@
 # BASH FOR BEGINNERS
 ### Bash for Beginners | Automation | Shell Scripting
-***-Reference: bittentech***
+* **-Reference: bittentech** *
 # **INDEX**
 ## TABLE OF CONTENT
 1. [Introduction](#introduction)
@@ -24,6 +24,7 @@ A shell program is typically an executable *binary* that takes commands that you
 Typically runs in a *text window* where user can interpret commands to carry out various actions.
 Most mordern **linux and Unix** distributions provide a BASH shell by default.
 > First Shell: Thompson (1971)
+
 > Bourne-Again(Bash): Bash (1987)
 
 ### Terminal
@@ -32,6 +33,7 @@ mainly helps in transimission of commands.
 ### Shell
 A command interpreter whose main purpose is to run other programs. converts the command into a *kernel-understandable* form and passes it to the kernel.
 Terminal passes the typed command to shell, which understands them and tells the kernel what to do.
+
 **Example of Linux Commands**
 |COMMANDS|DESCRIPTION|
 |:------|:---------|
