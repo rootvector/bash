@@ -17,3 +17,10 @@
 ---
 
 ## Introduction
+
+### History of linux and what is BASH?
+**BASH** is a *Unix* shell and command language written by **Brian Fox** for the GNU Project as a free software replacement for the *Bourne shell*.
+A shell program is typically an executable *binary* that takes commands that you type.
+Typically runs in a *text window* where user can interpret commands to carry out various actions.
+Most mordern **linux and Unix** distributions provide a BASH shell by default.
+
