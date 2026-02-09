@@ -254,7 +254,7 @@ COMMENTS
 
 > Note: Use double `"` when you are printing a variable value. if you use single `'` that print the variable_name insted of variable value.
 
-*example*
+*example `single_vs_double.sh*
 ```bash
 name="rootvector"
 
@@ -263,3 +263,17 @@ echo "This is printed in DOUBLE $name"
 echo 'This is printed in SINGLE $name'
 ```
 
+**Inline Command Execution**
+
+`$(command)`
+
+A command can be any linux or bash command ex `hostname`.
+
+**example `inlinecmd_exe.sh`
+
+```bash
+#!/bin/bash
+
+echo "Running command $(hostname)"
+echo "Hello, $(hostname)"
+```
