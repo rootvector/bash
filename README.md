@@ -287,10 +287,36 @@ to get exit code of previous executed program we will use `$?` that give the exi
 
 ```bash
 echo "Hello, rootvector"
-
-exit $?
+echo $?
+exit 0
 ```
 
 after code execution enter this command in terminal we can see the exit code of this example.
 
-`$?` you can get the exit status.
+`echo $?` you can get the exit status.
+
+## Variables And Operators
+
+Operator are use to perform arithematic operatons such as, addition, substraction, multiplication and division.
+the variable or number called operand and the `(+, -, *, /)` symbols are called operator while performing aritematic operations.
+
+*examples* 
+
+- addition of tow numbers
+ 
+`ehco 10+20`
+
+- substraction of tow numbers
+
+`echo 20-5`
+
+- multiplication of two numbers
+
+`echo 5*10`
+
+- division of two numbers
+
+`echo 100/5`
+
+
+
