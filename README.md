@@ -5,13 +5,14 @@
 ## TABLE OF CONTENT
 1. [Introduction](#introduction)
 2. [Variables](#variables)
-3. [Conditional Statements](#conditional-statements)
-4. [Loops](#loops)
-5. [Strings](#strings)
-6. [Arrays](#arrays)
-7. [Functions](#functions)
-8. [File Operations](#file-operations)
-9. [Mini Projects](#mini-projects)
+3. [Operators](#variables-and-operators)
+4. [Conditional Statements](#conditional-statements)
+5. [Loops](#loops)
+6. [Strings](#strings)
+7. [Arrays](#arrays)
+8. [Functions](#functions)
+9. [File Operations](#file-operations)
+10. [Mini Projects](#mini-projects)
     - *Real world useful programs*
 
 ---
@@ -304,7 +305,7 @@ the variable or number called operand and the `(+, -, *, /)` symbols are called 
 
 - addition of tow numbers
  
-`ehco 10+20`
+`echo 10+20`
 
 - substraction of tow numbers
 
