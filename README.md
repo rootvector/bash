@@ -141,6 +141,10 @@ or `mv * /path` move the all file, folder form present directory to provided `/p
 
 */bin is path of all binarys that execute as program or software*
 
+#### Redirection and Pipes
+
+*use `>` to redirect output: ex: `ls > file.txt`
+
 *use 2> to pass errors*
 
 - check out executables file in your system by running command
@@ -161,5 +165,20 @@ ls --help
 ```
 
 ---
+
+#### First Hello World Program in Bash
+
+```bash
+#!/bin/bash
+
+echo "Hello, World!"
+```
+
+**Here, **
+
+*#! : is called shebang*
+
+*echo : is the print statement*
+
 
 ## Variables
