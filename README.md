@@ -166,7 +166,7 @@ ls --help
 
 ---
 
-#### First Hello World Program in Bash
+#### First Hello World Program in Bash `hello_world.sh`
 
 ```bash
 #!/bin/bash
