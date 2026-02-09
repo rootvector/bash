@@ -198,3 +198,54 @@ name="rootvector"
 echo "My name is $name!"        # note you want to access variable value use $ sign before variable name.
 ```
 
+**Getting Input Form User**
+
+*syntax*
+
+`read variable_name`
+
+**`get_input.sh`**
+
+```bash
+#!/bin/bash
+
+echo "Enter Your Name: "
+read name
+
+# printing name
+echo "Hello, $name!"
+```
+
+**Comments**
+
+- ***Single-Line Comment***
+
+use `#` for the single line comments
+
+*example*
+
+`# this is a single-line comment`
+
+- ***Multi-line Comment***
+
+1. *example*
+
+```bash
+# this
+# is
+# a
+# multi-line
+# comment
+```
+2. *example*
+
+```bash
+<<COMMENTS
+this
+is
+also
+a
+multi-line
+comment
+COMMENTS
+```
