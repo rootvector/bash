@@ -269,7 +269,7 @@ echo 'This is printed in SINGLE $name'
 
 A command can be any linux or bash command ex `hostname`.
 
-**example `inlinecmd_exe.sh`
+**example `inlinecmd_exe.sh`**
 
 ```bash
 #!/bin/bash
@@ -277,3 +277,20 @@ A command can be any linux or bash command ex `hostname`.
 echo "Running command $(hostname)"
 echo "Hello, $(hostname)"
 ```
+
+**Return codes and Exit Status**
+
+when any program runs, after the execution that program will return exit code.
+to get exit code of previous executed program we will use `$?` that give the exit code.
+
+**example `exit_code.sh`**
+
+```bash
+echo "Hello, rootvector"
+
+exit $?
+```
+
+after code execution enter this command in terminal we can see the exit code of this example.
+
+`$?` you can get the exit status.
