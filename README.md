@@ -300,23 +300,81 @@ after code execution enter this command in terminal we can see the exit code of 
 Operator are use to perform arithematic operatons such as, addition, substraction, multiplication and division.
 the variable or number called operand and the `(+, -, *, /)` symbols are called operator while performing aritematic operations.
 
-*examples* 
+**Types of Variables**
+
+- system variables (enviroment variables)
+
+you can check out them by runnng command `printenv`
+
+- User Define variables
+
+*conditions to create variable*
+
+you can create a variable starting with alphabet or underscore but you can not start variable name with number.
+
+**example**
+
+valid variables
+```bash
+name="rootvector"
+_msg="This is a message"
+
+#this is not allowed
+1name="notvalid"
+4get="apt-get"
+```
+
+
+*examples of arithematic operations `arithematic_operators.sh`* 
 
 - addition of tow numbers
  
-`ehco 10+20`
+`ehco $(( 10+20 ))`
 
 - substraction of tow numbers
 
-`echo 20-5`
+`echo $(( 20-5 ))`
 
 - multiplication of two numbers
 
-`echo 5*10`
+`echo $(( 5*10 ))`
 
 - division of two numbers
 
-`echo 100/5`
+`echo $(( 100/5 ))`
 
+- Addition using `expr`
+
+```bash
+echo `expr 10 + 20`
+```
+
+#### Command line arguments
+
+you can get command line arguments using `$` sign and index number or argument.
+
+*example `commandline_arg.sh`*
+
+```bash
+echo "this is a first argument $1"
+echo "this is a second argument $2"
+echo $#
+```
+
+run that script like this,
+```bash
+./commandline_arg.sh first second
+```
+you will get output like that,
+
+```bash
+this is a first argument first
+this is a second argument second
+```
+> You can use `$#` to check how much arguments are passed.
+
+---
+
+## Conditional Statements
 
 
