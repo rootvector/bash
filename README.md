@@ -488,14 +488,11 @@ esac
 loops are use to repeat a block of code for a several time. that runs a statement that in a loop block. that repeatedly runs and when a condition gets false then that loop will break.
 
 1. For Loop
-
 2. While Loop
-
 3. Until Loop
 
 
-
-1. For Loop
+1) For Loop
 
 
 ```bash
@@ -551,7 +548,7 @@ for ((;;)); do
 done
 ```
 
-2. While Loop
+2) While Loop
 
 ```bash
 # syntax
@@ -567,7 +564,7 @@ done
 
 ```
 
-3. Until Loop
+3) Until Loop
 
 ```bash
 # syntax 
@@ -575,3 +572,197 @@ until [ condition/expression ]; do
     commands
 done
 ```
+
+## Strings
+
+**comparing strings**
+
+*example `stringcomp.sh`*
+*examples check out in string folder*
+
+```bash
+
+str1="This is first string"
+str2="This is second"
+
+if [ "$str1" = "$str2" ]
+then
+    echo "String are same"
+else
+    echo "not same"
+fi
+
+```
+
+**Important switches**
+
+```bash
+-z $str : return true if string was empty or null
+-n $str : return true if string was not empty or null
+use `expr length $str` to count the length of string or using `${#string}
+
+
+# substring
+
+${variable:offset:lenght}
+${$tr:10:15}
+```
+
+---
+
+## Arrays
+array is a collection of elements accessing by index number. the index number start with 0.
+bash only support single dimention element.
+
+**Example**
+
+```bash
+
+# declaring array
+
+declare -a arr      #declaration
+
+arr=("my" "name" "is" "rootvector")
+
+# Associated array
+
+declare -A array_associ
+
+array_associ=(
+    [first]="orange"
+    [second]="Apple"
+    [third]="banana"
+)
+
+# accessing values
+
+echo ${arr[0]}
+
+echo ${array_associ[first]}
+
+# use @/* to print all elements
+echo ${arr[@]}
+
+@ take elements saperated
+* take elements in string 
+
+# accessing keys
+
+echo ${!arr[0]}
+
+# accessing lenght of arr
+echo ${#arr[@]}
+
+
+# delating array element using unset keyword
+
+unset arr[1]
+
+# delating array
+
+unset arr
+
+---
+
+## Functions
+
+functions are the block of code that only runs when we call them.
+it make program samll and easy to understand. we call use funtion with different values.
+
+*syntax*
+
+```bash
+
+#!/bin/bash
+
+# function defination
+
+funtion_name(){
+    commands
+}
+
+hello(){
+    echo "hello"
+}
+
+# calling function
+
+hello
+
+
+# defining function with function keyword
+
+# syntax
+
+function fun_name(){ commands;}
+
+
+# passing arguments
+
+# example
+
+hello this a arguments
+
+# check out hellofun.sh
+
+# local variable
+
+add(){
+    local v1=5
+    v2=15
+    echo "addition = $(( v1+v2 ))"
+}
+
+add
+
+echo "v1 is goen and v2 is $v2"
+
+# retuning function exit status
+
+echo "exit status of add is $?"
+
+# modifing predefine function using builtin the builtin tell runner to call the built in function not overwritted.
+
+echo () {
+    builtin echo -n `date +"[%Y-%m-%d %H:%M:%S]"` ":"
+    builtin echo $1
+}
+
+```
+
+---
+
+## File Operatons
+
+```bash
+#assessing file
+
+file_content = 'cat colors.txt'
+
+echo "$file_content"
+
+# second option 
+
+file=${<colors.txt}
+
+# in while
+
+file=$1
+
+while read line; do
+    echo $line
+done < $file
+
+
+# writing in file you can write in file using 
+
+---
+
+## Mini Projects
+
+
+
+---
+
+
+
