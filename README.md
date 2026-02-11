@@ -487,4 +487,90 @@ esac
 
 loops are use to repeat a block of code for a several time. that runs a statement that in a loop block. that repeatedly runs and when a condition gets false then that loop will break.
 
+1. For Loop
 
+2. While Loop
+
+3. Until Loop
+
+1. For Loop
+
+**method 1**
+
+```bash
+# syntax
+for variable in iterable; do
+
+    commands
+
+done
+# example for_loop.sh
+
+for i in {1..10}
+do
+
+    echo $i
+
+done
+
+**method 2 c style  c_style.sh**
+
+for ((i=1;i<=10;9++))
+do
+    echo $i
+
+done
+
+```
+
+**Break and Continue**
+
+break are used to break the loop. or stop a loop or program that will break the sequence.
+
+continue are use to continue the loop is the perticular condition gets true.
+
+*example*
+
+```bash
+
+for ((i=1;i<=10;i++)); do
+
+    if [ $i -eq 5 ]; then
+        break       # try with continue
+    fi
+    echo $i
+done
+```
+
+**infinite loop**
+
+```bash
+for ((;;)); do
+    echo "infinite"
+done
+```
+
+2. While Loop
+
+```bash
+# syntax
+while [ expression/condition ]; do
+    command
+done
+
+# c_type
+while ((i<=10));do
+    commands
+    inc/dec
+done
+
+```
+
+3. Until Loop
+
+```bash
+# syntax 
+until [ condition/expression ]; do
+    commands
+done
+```
